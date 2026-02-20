@@ -1,29 +1,30 @@
 {
   "expo": {
-    "name": "card-vault",
-    "slug": "card-vault",
+    "name": "VaultX",
+    "slug": "vaultx",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "icon": "./assets/app-icon.png",
+    "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
+      "backgroundColor": "#0f172a"
     },
     "android": {
+      "package": "com.vaultx.app",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
+        "backgroundColor": "#0f172a"
+      }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "ios": {
+      "bundleIdentifier": "com.vaultx.app"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "302861e8-be8b-4c53-8c18-e1e57febeebf"
+      }
     }
   }
 }
