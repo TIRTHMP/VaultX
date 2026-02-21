@@ -38,11 +38,31 @@ export default function AddCardScreen({ navigation }) {
         >
 
             <View style={styles.container}>
-                <TextInput placeholder="Card Holder Name" style={styles.input} onChangeText={setCardHolder} />
-                <TextInput placeholder="Card Name" style={styles.input} onChangeText={setCardName} />
-                <TextInput placeholder="Card Number" style={styles.input} onChangeText={setNumber} />
-                <TextInput placeholder="Expiry (MM/YY)" style={styles.input} onChangeText={setExpiry} />
-                <TextInput placeholder="CVV" secureTextEntry style={styles.input} onChangeText={setCvv} />
+                <TextInput placeholder="Card Holder Name"
+                    placeholderTextColor="#888"
+                    style={styles.input}
+                    onChangeText={setCardHolder} />
+
+                <TextInput placeholder="Card Name"
+                    placeholderTextColor="#888"
+                    style={styles.input}
+                    onChangeText={setCardName} />
+
+                <TextInput placeholder="Card Number"
+                    placeholderTextColor="#888"
+                    style={styles.input}
+                    onChangeText={setNumber} />
+
+                <TextInput placeholder="Expiry (MM/YY)"
+                    placeholderTextColor="#888"
+                    style={styles.input}
+                    onChangeText={setExpiry} />
+
+                <TextInput placeholder="CVV"
+                    placeholderTextColor="#888"
+                    secureTextEntry style={styles.input}
+                    onChangeText={setCvv} />
+
                 <Button title="Save Card" onPress={saveCard} />
             </View>
         </LinearGradient>
@@ -53,6 +73,7 @@ const styles = StyleSheet.create({
     container: { padding: 20 },
     input: {
         backgroundColor: "#fff",
+        color: "#000",
         borderRadius: 14,
         padding: 15,
         marginBottom: 18,
