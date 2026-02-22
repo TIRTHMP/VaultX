@@ -52,15 +52,25 @@ The app is designed with security-first principles and a modern fintech-inspired
 --------------------
 ```bash   
 vaultx/
-├── assets/                # App icons, logos, images
-├── src/│   
-│       ├── components/    # CardItem component
-│       ├── screens/       # HomeScreen, AddCardScreen
-│       └── utils/         # Encryption utilities
-├── app.json               # Expo configuration
-├── eas.json               # Build configuration
-├── package.json
-└── README.md   
+│
+├── assets/                     # App icons, logos, images
+│
+├── src/
+│   ├── components/             # Reusable UI components
+│   │   └── CardItem.js
+│   │
+│   ├── screens/                # App screens
+│   │   ├── AddCardScreen.js
+│   │   └── HomeScreen.js
+│   │
+│   └── utils/                  # Utility/helper functions
+│       └── encryption.js
+│
+├── app.json                    # Expo configuration
+├── eas.json                    # EAS build configuration
+├── package.json                # Dependencies
+├── App.js                      # Root component
+└── README.md                   # Project documentation
 ```
 
 🔐 Security Architecture
