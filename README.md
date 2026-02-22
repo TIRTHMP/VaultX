@@ -85,7 +85,7 @@ VaultX follows multiple layers of protection:
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/vaultx.gitcd vaultx
+git clone https://github.com/TIRTHMP/vaultx.gitcd vaultx
 ```
 
 Install dependencies:
