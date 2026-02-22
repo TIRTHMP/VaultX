@@ -51,16 +51,16 @@ The app is designed with security-first principles and a modern fintech-inspired
 📂 Project Structure
 --------------------
 ```bash   
-vaultx/│
-       ├── assets/                # App icons, logos, images
-       ├── src/│   
-       │       ├── components/        # CardItem component
-       │       ├── screens/           # HomeScreen, AddCardScreen
-       │       └── utils/             # Encryption utilities
-       ├── app.json               # Expo configuration
-       ├── eas.json               # Build configuration
-       ├── package.json
-       └── README.md   
+vaultx/
+├── assets/                # App icons, logos, images
+├── src/│   
+│       ├── components/    # CardItem component
+│       ├── screens/       # HomeScreen, AddCardScreen
+│       └── utils/         # Encryption utilities
+├── app.json               # Expo configuration
+├── eas.json               # Build configuration
+├── package.json
+└── README.md   
 ```
 
 🔐 Security Architecture
