@@ -134,7 +134,7 @@ eas build -p android --profile preview
 👨‍💻 Author
 ------------
 
-**Tirth Patel**BTech CSE | Software Developer | AI & Backend Enthusiast
+**Tirth Patel** | BTech CSE | Software Developer | AI & Backend Enthusiast
 
 -   GitHub: [TIRTHMP](https://github.com/TIRTHMP)
 -   LinkedIn: [Tirth Patel](https://www.linkedin.com/in/tirth-p-b46aab32a/)
