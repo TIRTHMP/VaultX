@@ -194,7 +194,10 @@ export default function CardItem({ card, onDelete }) {
                                                     ? require("../../assets/visa.png")
                                                     : require("../../assets/mastercard.png")
                                             }
-                                            style={styles.logo}
+                                            style={[
+                                                styles.logo,
+                                                cardType === "visa" && { tintColor: "#f5f5f5" }
+                                            ]}
                                             resizeMode="contain"
                                         />
                                     )}
@@ -299,10 +302,12 @@ const styles = StyleSheet.create({
     },
 
     chip: {
-        width: 65,
-        height: 48,
-        resizeMode: "cover",
+        width: 48,
+        height: 34,
         marginTop: 12,
+        borderRadius: 8,
+        overflow: "hidden",
+        opacity: 0.95,
     },
 
     number: {
