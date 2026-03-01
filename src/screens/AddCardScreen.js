@@ -106,7 +106,7 @@ export default function AddCardScreen({ navigation }) {
                     placeholderTextColor="#888"
                     secureTextEntry style={styles.input}
                     keyboardType="number-pad"
-                    maxLength={4}
+                    maxLength={3}
                     onChangeText={(text) => setCvv(text.replace(/\D/g, ""))}
                     value={cvv} />
 
