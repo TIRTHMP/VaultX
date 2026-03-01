@@ -110,11 +110,9 @@ export default function CardItem({ card, onDelete }) {
     };
 
     const gradientColors =
-        cardType === "visa"
-            ? ["#3a4edc", "#5f74ff"]
-            : cardType === "mastercard"
-                ? ["#eb001b", "#ff9900"]
-                : ["#2c2c3a", "#3a3a4f"];
+        cardType === "visa" || cardType === "mastercard"
+            ? ["#0f0f0f", "#1c1c1c", "#2a2a2a", "#0f0f0f"] // Metallic Black
+            : ["#6b6b6b", "#8a8a8a", "#a3a3a3", "#6b6b6b"]; // Metallic Gray
 
     return (
         <View style={styles.cardWrapper}>
@@ -155,6 +153,12 @@ export default function CardItem({ card, onDelete }) {
                         >
 
                             <LinearGradient colors={gradientColors} style={styles.frontContent}>
+                                <View style={styles.shineOverlay} />
+
+                                <Text style={styles.bank}>
+                                    {decryptData(card.cardName)}
+                                </Text>
+
                                 <Text style={styles.bank}>
                                     {decryptData(card.cardName)}
                                 </Text>
@@ -244,7 +248,8 @@ const styles = StyleSheet.create({
     },
 
     bank: {
-        color: "#fff",
+        color: "#e5e5e5",
+        letterSpacing: 1,
         fontSize: 18,
         fontWeight: "600",
     },
@@ -294,14 +299,17 @@ const styles = StyleSheet.create({
     },
 
     chip: {
-        width: 60,
-        height: 45,
+        width: 65,
+        height: 48,
         resizeMode: "cover",
-        marginTop: 10,
+        marginTop: 12,
     },
 
     number: {
-        color: "#fff",
+        color: "#f5f5f5",
+        textShadowColor: "rgba(255,255,255,0.2)",
+        textShadowOffset: { width: 0, height: 1 },
+        textShadowRadius: 3,
         fontSize: 22,
         letterSpacing: 3,
         marginVertical: 15,
@@ -314,14 +322,14 @@ const styles = StyleSheet.create({
     },
 
     label: {
-        color: "#ddd",
+        color: "#b5b5b5",
         fontSize: 10,
     },
 
     value: {
-        color: "#fff",
+        color: "#ffffff",
         fontSize: 16,
-        fontWeight: "600",
+        fontWeight: "700",
     },
 
     logo: {
@@ -355,5 +363,14 @@ const styles = StyleSheet.create({
     lockSubtitle: {
         color: "#aaa",
         marginTop: 10,
+    },
+
+    shineOverlay: {
+        position: "absolute",
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        backgroundColor: "rgba(255,255,255,0.04)",
     },
 });
